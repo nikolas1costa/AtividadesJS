@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//BR" "http://www.w3.org/TR/xhtml/1-strict.dtd">
+<html xmln="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bem vindo</title>
+    <script type="text/javascript">
+
+        var escolha, tagInicio, tagFinal, tipoLista;
+        var validaEntrada = true;
+
+        escolha = prompt("Selecione o style da lista: \n" +
+            "1 (numerico), 2 (letra), 3(Romano)", "1");
+
+        switch (escolha) {
+            case "1":
+                tagInicio = "<ol>";
+                tagFinal = "</ol>";
+                tipoLista = "<h1>Lista Numerica</h1>";
+                break;
+            case "2":
+                tagInicio = "<ol style = \"list-style-type: upper-alpha\">";
+                tagFinal = "</ol>";
+                tipoLista = "<h1> Lista Letra</h1>";
+                break;
+            case "3":
+                tagInicio = "<ol style = \"list-style-type: upper-roman\">";
+                tagFinal = "</ol>";
+                tipoLista = "<h1> Lista Romana</h1>";
+                break;
+            default:
+                validaEntrada = false;
+                break;
+        }
+
+        if (validaEntrada == true) {
+            document.writeln(tipoLista + tagInicio);
+
+            for (var i = 1; i <= 3; ++i) {
+                document.writeln("<li> List item " + i + "</li> ");
+                document.writeln(tagFinal);
+            }
+        } else {
+            document.writeln("Opcao invalida: " + escolha);
+        }
+    </script>
+</head>
+
+<body>
+    <p>Click Refresh (ou reload) para executar este script</p>
+</body>
+
+</html>

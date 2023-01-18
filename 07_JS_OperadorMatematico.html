@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//BR" "http://www.w3.org/TR/xhtml/1-strict.dtd">
+<html xmln="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bem vindo</title>
+    <script type="text/javascript">
+
+    var stringNumero1;
+    var stringNumero2;
+    var numero1;
+    var numero2;
+    var soma;
+    var sub;
+    var mult;
+    var div;
+
+
+    stringNumero1 = prompt ("Entre com o 1º numero: ");
+
+    stringNumero2 = prompt ("Entre com o 2º numero: ");
+
+    numero1 = parseInt(stringNumero1);
+    numero2 = parseInt(stringNumero2);
+
+    soma = numero1 + numero2;
+    sub = numero1 - numero2;
+    mult = numero1 * numero2;
+    div = numero1 / numero2;
+
+    document.writeln("<h1> Numero 1: " + numero1 + " <br> Numero 2: "+ numero2+" </h1>");
+    document.writeln("<h1> <br><br>A soma é: " + soma + "</h1>");
+    document.writeln("<h1> A subtracao é: " + sub + "</h1>");
+    document.writeln("<h1> A multiplicacao é: " + mult + "</h1>");
+    document.writeln("<h1> A divisao é: " + div + "</h1>");
+    </script>
+</head>
+<body>
+    <p>Click Refresh (ou reload) para executar este script</p>
+</body>
+</html>
